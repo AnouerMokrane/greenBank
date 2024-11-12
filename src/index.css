@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-p1 scroll-smooth;
+  }
+
+  body {
+    @apply font-MPLUS1 text-[16px] tracking-[-0.03em] text-white;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  button {
+    @apply bg-none tracking-[-0.03em];
+  }
+
+  input {
+    @apply tracking-[-0.03em];
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto max-w-[1252px] px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+  }
+}
